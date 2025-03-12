@@ -32,7 +32,6 @@ function exe(dir_r, dir) {
         myTask.on('progress', progress => {
             console.log(`Progress: ${progress.percent}%`);
         });
-        path.join(dir, "/ subpackage")
         myTask.on('end', () => {
             console.log('Extraction completed successfully!');
             fs.renameSync(dir_path_uncompress, file_path_wxapkg);
